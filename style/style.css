@@ -1,3 +1,29 @@
+nav {
+  border: solid 1px red;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: solid 1px black;
+  list-style: none;
+}
+nav ul li {
+  border: solid 1px black;
+  margin: 5px;
+  padding: 5px;
+}
+nav ul a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header {
+  border: solid 2px green;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

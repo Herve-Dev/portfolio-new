@@ -1,0 +1,23 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+nav {
+    border: solid 1px red;
+
+        ul {
+            @include margin-padding(0,0);
+            @include display(flex, flex-end, flex-end);
+            border: solid 1px black;
+            list-style: none;
+
+                li {
+                    border: solid 1px black;
+                    @include margin-padding(5px,5px);
+                }
+
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+        }
+}

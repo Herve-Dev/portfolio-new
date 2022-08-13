@@ -1,0 +1,15 @@
+@mixin display ($display, $just-content, $align-item) {
+    display: $display;
+    justify-content: $just-content;
+    align-items: $align-item;
+}
+
+@mixin margin-padding ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height;
+}

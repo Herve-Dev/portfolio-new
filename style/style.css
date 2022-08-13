@@ -19,7 +19,27 @@ nav ul a {
   font-size: 20px;
   text-decoration: none;
 }
+nav .fa-bars {
+  display: none;
+}
 
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  nav > ul > li {
+    display: none;
+  }
+  nav > .fa-bars {
+    cursor: pointer;
+    font-size: 35px;
+    border: solid 1px black;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
 header {
   border: solid 2px green;
 }

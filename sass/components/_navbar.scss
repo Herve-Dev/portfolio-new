@@ -20,4 +20,23 @@ nav {
                     text-decoration: none;
                 }
         }
+
+        .fa-bars {
+            display: none;
+        }
+}
+
+@include breakpoint(mobile-tablet) {
+    nav > ul > li {
+        display: none;
+    }
+
+    nav > .fa-bars {
+        cursor: pointer;
+        font-size: 35px;
+        border: solid 1px black;
+        @include width-height(auto,auto);
+        @include margin-padding(10px,0);
+        @include display(flex, flex-end, flex-end);
+    }
 }

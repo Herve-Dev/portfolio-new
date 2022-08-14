@@ -1,4 +1,6 @@
+@use "./base/global";
 @use "./components/navbar";
+@use "./components/sidemenu";
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/footer";

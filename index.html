@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./js/sidebar-menu.js"></script>
     <script defer src="https://kit.fontawesome.com/79a5694c4a.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
@@ -13,17 +14,33 @@
     <header>
         <nav>
             <ul>
-                <li><a href="http://">A propos</a></li>
+                <li><a href="http://">À propos</a></li>
                 <li><a href="http://">Compétences</a></li>
-                <li><a href="http://">Projet</a></li>
+                <li><a href="http://">Projets</a></li>
                 <li><a href="http://">Me contacter</a></li>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i onclick="activeSideMenu()" class="fa-solid fa-bars"></i>
         </nav>
+
+        <section>
+            <h1>Bienvenue sur mon portfolio</h1>
+            <h2>Développeur web</h2>
+            <div></div>
+        </section>
+
+        <div class="closeMenu">
+            <i onclick="closeSideMenu()" class="fa-solid fa-xmark"></i>
+            <ul>
+                <li><a href="http://">À propos</a></li>
+                <li><a href="http://">Compétences</a></li>
+                <li><a href="http://">Projets</a></li>
+                <li><a href="http://">Me contacter</a></li>
+            </ul>
+        </div>
 
     </header>
     <main>
-
+        
     </main>
     <footer>
 

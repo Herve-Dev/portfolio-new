@@ -1,0 +1,51 @@
+@use "../utils/mixins" as *;
+
+div {
+    @include width-height(100%,100vh);
+    border: solid 2px purple;
+    background-color: purple;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 100%;
+
+        .fa-xmark {
+            display: flex;
+            justify-content: flex-end;
+            //border: solid 1px black;
+            //width: 100%;
+            font-size: 40px;
+            cursor: pointer;
+            padding: 20px;
+            
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+                li {
+                    @include width-height(100%,100px);
+                    @include display(flex, center, center);
+                    //border: solid 1px black;
+                    cursor: pointer;
+                }
+
+                li > a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                }
+        }
+}
+
+.active {
+    transition: 1s;
+    right: 0;
+}
+
+.closeMenu {
+    transition: 1s;
+    right: 100%;
+}

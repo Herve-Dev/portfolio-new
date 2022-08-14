@@ -3,12 +3,14 @@
 
 nav {
     border: solid 1px red;
+    height: 10%;
 
         ul {
             @include margin-padding(0,0);
-            @include display(flex, flex-end, flex-end);
-            border: solid 1px black;
+            @include display(flex, flex-end, center);
             list-style: none;
+            //border: solid 1px black;
+            height: 100%;
 
                 li {
                     border: solid 1px black;
@@ -27,16 +29,16 @@ nav {
 }
 
 @include breakpoint(mobile-tablet) {
-    nav > ul > li {
+    nav > ul {
         display: none;
     }
 
     nav > .fa-bars {
         cursor: pointer;
         font-size: 35px;
-        border: solid 1px black;
-        @include width-height(auto,auto);
-        @include margin-padding(10px,0);
-        @include display(flex, flex-end, flex-end);
+        //border: solid 1px black;
+        //@include width-height(auto,auto);
+        @include margin-padding(15px,0);
+        @include display(flex, flex-end, center);
     }
 }

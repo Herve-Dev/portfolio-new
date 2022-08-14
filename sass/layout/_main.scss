@@ -1,0 +1,24 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+main {
+    border: solid 5px black;
+    height: 100vh;
+}
+
+/*main > section {
+    display: flex;
+    align-items: center;
+    border: solid 2px blue;
+    flex-direction: column;
+
+        h1 {
+            font-size: 70px;
+            border: solid 1px black;
+           // @include margin-padding(100px,0)
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+}*/

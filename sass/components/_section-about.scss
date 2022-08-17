@@ -1,0 +1,9 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+#about {
+    @include width-height(100%, 100vh);
+    border: solid 2px red;
+    background-color: red;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 85%);
+}

@@ -1,6 +1,7 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
-footer {
+#skills {
     @include width-height(100%, 100vh);
+    //border: solid 2px blueviolet;
 }

@@ -2,13 +2,12 @@
 @use "../utils/breakpoint" as *;
 
 header {
-
     flex-direction: column;
     @include width-height(100%,100vh);
 
 
         section {
-            border: 2px solid blue;
+            //border: 2px solid blue;
             height: 90vh;
             display: flex;
             //align-items: center;

@@ -1,6 +1,9 @@
 @use "./base/global";
 @use "./components/navbar";
 @use "./components/sidemenu";
+@use "./components/section-about";
+@use "./components/section-skill";
+@use "./components/section-projects";
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/footer";

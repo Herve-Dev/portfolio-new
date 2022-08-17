@@ -1,6 +1,6 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
-footer {
+#projects {
     @include width-height(100%, 100vh);
 }

@@ -3,5 +3,54 @@
 
 #skills {
     @include width-height(100%, 100vh);
-    //border: solid 2px blueviolet;
+    
+        article {
+            border: solid 3px green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        ul {
+            @include margin-padding(0,0);
+            display: flex;
+            list-style: none;
+            border: solid 2px black;
+            width: 50%;
+            flex-wrap: wrap;
+        }
+
+        ul > li {
+            @include display(flex, center, center);
+            border: solid 1px blue;
+            margin: 10px;
+            width: 15%;
+            height: 100px;
+        }
+
+        ul > li > img {
+            width: 100px;
+        }
+}
+
+@include breakpoint(mobile-tablet) {
+    #skills {
+        ul {
+            @include width-height(90%,120px);
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scrollbar-width: auto;
+        }
+
+        ul > li {
+            width: 100%;
+        }
+
+        ul > li > img {
+            width: 100px;
+        }
+        
+    }
 }

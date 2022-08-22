@@ -4,7 +4,7 @@
 header {
     flex-direction: column;
     @include width-height(100%,100vh);
-
+    scroll-snap-align: center;
 
         section {
             //border: 2px solid blue;

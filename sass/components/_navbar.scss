@@ -2,24 +2,40 @@
 @use "../utils/breakpoint" as *;
 
 nav {
-    border: solid 1px red;
     height: 10%;
+    background-color: #2F2F2F;
 
         ul {
             @include margin-padding(0,0);
             @include display(flex, flex-end, center);
             list-style: none;
-            //border: solid 1px black;
             height: 100%;
 
                 li {
-                    border: solid 1px black;
                     @include margin-padding(5px,5px);
                 }
 
                 a {
+                    position: relative;
                     font-size: 20px;
                     text-decoration: none;
+                    color: white;
+                    padding: 10px;
+                }
+
+                a:after {
+                    content: "";
+                    position: absolute;
+                    background-color: white;
+                    height: 2px;
+                    width: 0;
+                    left: 0;
+                    top: 45px;
+                    transition: 0.3s;
+                }
+
+                a:hover:after {
+                    width: 100%;
                 }
         }
 
@@ -29,15 +45,19 @@ nav {
 }
 
 @include breakpoint(mobile-tablet) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     nav > ul {
         display: none;
     }
 
     nav > .fa-bars {
+        color: white;
         cursor: pointer;
         font-size: 35px;
-        //border: solid 1px black;
-        //@include width-height(auto,auto);
         @include margin-padding(15px,0);
         @include display(flex, flex-end, center);
     }

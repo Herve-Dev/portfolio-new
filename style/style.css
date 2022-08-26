@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
+a, h1, h2 {
+  font-family: "Oswald", sans-serif;
+}
+
 nav {
-  border: solid 1px red;
   height: 10%;
+  background-color: #2F2F2F;
 }
 nav ul {
   margin: 0;
@@ -17,23 +23,43 @@ nav ul {
   height: 100%;
 }
 nav ul li {
-  border: solid 1px black;
   margin: 5px;
   padding: 5px;
 }
 nav ul a {
+  position: relative;
   font-size: 20px;
   text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav ul a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  top: 45px;
+  transition: 0.3s;
+}
+nav ul a:hover:after {
+  width: 100%;
 }
 nav .fa-bars {
   display: none;
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
   nav > ul {
     display: none;
   }
   nav > .fa-bars {
+    color: white;
     cursor: pointer;
     font-size: 35px;
     margin: 15px;
@@ -46,8 +72,7 @@ nav .fa-bars {
 div {
   width: 100%;
   height: 100vh;
-  border: solid 2px purple;
-  background-color: purple;
+  background-color: #2F2F2F;
   position: absolute;
   position: fixed;
   top: 0;
@@ -60,6 +85,7 @@ div .fa-xmark {
   font-size: 40px;
   cursor: pointer;
   padding: 20px;
+  color: white;
 }
 div ul {
   list-style: none;
@@ -76,7 +102,7 @@ div ul li {
 div ul li > a {
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 600;
 }
 
@@ -101,47 +127,52 @@ div ul li > a {
 #skills {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 #skills article {
+  margin: 0;
+  padding: 0;
   border: solid 3px green;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #skills ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   border: solid 2px black;
-  width: 50%;
-  flex-wrap: wrap;
+  height: 80%;
 }
 #skills ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid 1px blue;
-  margin: 10px;
-  width: 15%;
-  height: 100px;
 }
 #skills ul > li > img {
   width: 100px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
-  #skills ul {
+  #skills {
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px purple;
+  }
+  #skills article {
     width: 90%;
-    height: 120px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    scrollbar-width: auto;
+    margin: 5px;
+    height: 30%;
+  }
+  #skills ul {
+    max-height: 150px;
+    width: 90%;
+    overflow-x: auto;
   }
   #skills ul > li {
-    width: 100%;
+    width: 50%;
   }
   #skills ul > li > img {
     width: 100px;
@@ -152,6 +183,105 @@ div ul li > a {
   height: 100vh;
 }
 
+#stack {
+  width: 70%;
+  height: 50%;
+  flex-grow: 8;
+}
+#stack ul {
+  flex-wrap: wrap;
+  background-color: burlywood;
+}
+#stack ul li {
+  margin: 10px;
+  width: 15%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #stack {
+    display: flex;
+    flex-direction: column;
+  }
+  #stack > ul {
+    width: 100%;
+    border: solid 3px green;
+  }
+}
+#learning {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 50%;
+}
+#learning ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  background-color: burlywood;
+}
+#learning ul li {
+  width: 50%;
+}
+#learning ul li > img {
+  width: 70px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #learning > ul {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  #learning > ul > li {
+    width: 25%;
+  }
+  #learning > ul > li > img {
+    width: 60px;
+  }
+}
+#proficiency {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+#proficiency ul {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70%;
+  background-color: burlywood;
+  /*li:nth-child(2n+1) {
+      justify-content: flex-end;
+      background-color: green;
+  }
+
+  li:nth-child(2n) {
+      justify-content: flex-start;
+      background-color: aqua;
+  }*/
+}
+#proficiency ul li {
+  border: solid 1px black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #proficiency > ul {
+    width: 90%;
+    height: 350px;
+  }
+  #proficiency > ul > li {
+    height: 100%;
+    font-size: 23px;
+  }
+}
 header {
   flex-direction: column;
   width: 100%;
@@ -167,6 +297,7 @@ header section {
 header section h1 {
   text-align: center;
   font-size: 100px;
+  font-weight: 900;
 }
 header section h2 {
   text-align: center;
@@ -178,6 +309,7 @@ header section h2 {
   header > section > h1 {
     font-size: 50px;
     margin-top: 150px;
+    font-weight: 900;
   }
   header > section > h2 {
     font-size: 30px;

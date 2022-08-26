@@ -2,8 +2,7 @@
 
 div {
     @include width-height(100%,100vh);
-    border: solid 2px purple;
-    background-color: purple;
+    background-color: #2F2F2F;
     position: absolute;
     position: fixed;
     top: 0;
@@ -13,12 +12,10 @@ div {
         .fa-xmark {
             display: flex;
             justify-content: flex-end;
-            //border: solid 1px black;
-            //width: 100%;
             font-size: 40px;
             cursor: pointer;
             padding: 20px;
-            
+            color: white;
         }
 
         ul {
@@ -28,14 +25,13 @@ div {
                 li {
                     @include width-height(100%,100px);
                     @include display(flex, center, center);
-                    //border: solid 1px black;
                     cursor: pointer;
                 }
 
                 li > a {
                     font-size: 20px;
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     font-weight: 600;
                 }
         }

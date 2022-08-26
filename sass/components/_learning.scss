@@ -1,0 +1,40 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+#learning {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 50%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: nowrap;
+            background-color: burlywood;
+
+                li {
+                    width: 50%;
+                }
+
+                li > img {
+                    width: 70px;
+                }
+        }
+}
+
+@include breakpoint(mobile-tablet) {
+    #learning > ul {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #learning > ul > li {
+        width: 25%;
+    }
+
+    #learning > ul > li > img {
+        width: 60px;
+    }
+}

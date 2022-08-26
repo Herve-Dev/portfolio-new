@@ -3,30 +3,25 @@
 
 #skills {
     @include width-height(100%, 100vh);
+    display: flex;
+    flex-wrap: wrap;
     
         article {
+            @include margin-padding(0,0);
             border: solid 3px green;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
     
         ul {
             @include margin-padding(0,0);
-            display: flex;
+            @include display(flex, center, center);
             list-style: none;
             border: solid 2px black;
-            width: 50%;
-            flex-wrap: wrap;
+            height: 80%;
         }
 
         ul > li {
             @include display(flex, center, center);
             border: solid 1px blue;
-            margin: 10px;
-            width: 15%;
-            height: 100px;
         }
 
         ul > li > img {
@@ -36,21 +31,28 @@
 
 @include breakpoint(mobile-tablet) {
     #skills {
+        align-items: center;
+        flex-direction: column;
+        border: solid 2px purple;
+
+        article {
+            width: 90%;
+            margin: 5px;
+            height: 30%;
+        }
+
         ul {
-            @include width-height(90%,120px);
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            scrollbar-width: auto;
+            max-height: 150px;
+            width: 90%;
+            overflow-x: auto;
         }
 
         ul > li {
-            width: 100%;
+            width: 50%;
         }
 
         ul > li > img {
             width: 100px;
         }
-        
     }
 }

@@ -8,20 +8,21 @@
     
         article {
             @include margin-padding(0,0);
-            border: solid 3px green;
+            //border: solid 3px green;
+            overflow: hidden;
         }
     
         ul {
             @include margin-padding(0,0);
             @include display(flex, center, center);
             list-style: none;
-            border: solid 2px black;
+            border-radius: 10px;
             height: 80%;
+            background-color: #1098F7;
         }
 
         ul > li {
             @include display(flex, center, center);
-            border: solid 1px blue;
         }
 
         ul > li > img {
@@ -42,6 +43,7 @@
         }
 
         ul {
+            
             max-height: 150px;
             width: 90%;
             overflow-x: auto;

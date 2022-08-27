@@ -5,14 +5,28 @@
     width: 70%;
     height: 50%;
     flex-grow: 8;
+    @include display(flex, center,center);
+    flex-direction: column;
 
         ul {
-           flex-wrap: wrap;
-           background-color: burlywood;
+            width: 90%;
+            flex-wrap: wrap;
 
                 li {
-                    margin: 10px;
+                    margin: 15px;
                     width: 15%;
+                    background-color: white;
+                    border-radius: 5px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+
+                li:hover {
+                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25); 
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+                    transition: 0.3s;
+                    transform: scale(1.1);
+                    height: 120px;
                 }
         }
 }
@@ -21,11 +35,11 @@
     #stack {
         display: flex;
         flex-direction: column;
-        //align-items: center;
+        align-items: center;
     }
 
     #stack > ul {
         width: 100%;
-        border: solid 3px green;
+        //border: solid 3px green;
     }
 }

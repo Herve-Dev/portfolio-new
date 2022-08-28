@@ -9,17 +9,20 @@ a, h1, h2 {
   font-family: "Oswald", sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 nav {
   height: 10%;
   background-color: #2F2F2F;
 }
 nav ul {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  list-style: none;
   height: 100%;
 }
 nav ul li {
@@ -88,7 +91,6 @@ div .fa-xmark {
   color: white;
 }
 div ul {
-  list-style: none;
   padding: 0;
 }
 div ul li {
@@ -163,8 +165,8 @@ div ul li > a {
   }
   #skills article {
     width: 90%;
-    margin: 5px;
     height: 30%;
+    margin: 5px;
   }
   #skills ul {
     max-height: 150px;
@@ -197,11 +199,11 @@ div ul li > a {
   flex-wrap: wrap;
 }
 #stack ul li {
-  margin: 15px;
   width: 15%;
+  height: 120px;
+  margin: 15px;
   background-color: white;
   border-radius: 5px;
-  height: 40px;
   cursor: pointer;
 }
 #stack ul li:hover {
@@ -209,7 +211,6 @@ div ul li > a {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
   transform: scale(1.1);
-  height: 120px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -284,16 +285,16 @@ div ul li > a {
   height: 50%;
 }
 #proficiency ul {
-  display: flex;
-  flex-direction: column;
   width: 30%;
   height: 70%;
+  display: flex;
+  flex-direction: column;
 }
 #proficiency ul li {
-  color: white;
-  margin: 0;
   width: 100%;
   height: 100%;
+  color: white;
+  margin: 0;
   font-family: "Fjalla One", sans-serif;
   font-size: 30px;
 }
@@ -308,6 +309,33 @@ div ul li > a {
     font-size: 23px;
   }
 }
+#projects {
+  border: solid 2px black;
+}
+#projects ul {
+  width: 20%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  border: solid 3px green;
+}
+#projects ul li {
+  width: 90%;
+  height: 50%;
+  margin: 10px;
+  border: solid 2px red;
+}
+#projects ul li > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#projects ul li > section {
+  width: 100%;
+  height: 50%;
+  border: blue 2px solid;
+}
+
 header {
   flex-direction: column;
   width: 100%;

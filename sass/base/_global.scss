@@ -1,5 +1,7 @@
-//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -7,4 +9,9 @@ html {
 
 a, h1, h2 {
     font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    @include margin-padding(0,0);
+    list-style: none;
 }

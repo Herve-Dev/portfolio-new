@@ -188,10 +188,10 @@ div ul li > a {
 #stack {
   width: 70%;
   height: 50%;
-  flex-grow: 8;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 8;
   flex-direction: column;
 }
 #stack ul {
@@ -201,7 +201,7 @@ div ul li > a {
 #stack ul li {
   width: 15%;
   height: 120px;
-  margin: 15px;
+  margin: 10px;
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -233,8 +233,9 @@ div ul li > a {
   height: 50%;
 }
 #learning h3 {
-  margin-left: 80px;
+  margin-left: 25%;
   flex-wrap: nowrap;
+  margin-top: 25px;
 }
 #learning ul {
   display: flex;
@@ -243,8 +244,8 @@ div ul li > a {
 }
 #learning ul li {
   padding: 5px;
-  width: 30%;
-  margin: 10px;
+  width: 35%;
+  margin: 5px;
   background-color: white;
   border-radius: 10px;
   height: 80px;
@@ -313,8 +314,8 @@ div ul li > a {
   border: solid 2px black;
 }
 #projects ul {
-  width: 20%;
-  height: 40%;
+  width: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
   border: solid 3px green;
@@ -332,8 +333,21 @@ div ul li > a {
 }
 #projects ul li > section {
   width: 100%;
-  height: 50%;
+  height: 80%;
   border: blue 2px solid;
+}
+#projects ul li > section > ul {
+  width: 100%;
+  height: 100%;
+  border: solid 2px yellow;
+}
+#projects ul li > section > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: blue 2px solid;
+  width: 20%;
+  height: 30%;
 }
 
 header {

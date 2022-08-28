@@ -3,8 +3,8 @@
 
 #stack {
     @include width-height(70%,50%);
-    flex-grow: 8;
     @include display(flex, center,center);
+    flex-grow: 8;
     flex-direction: column;
 
         ul {
@@ -13,7 +13,7 @@
 
                 li {
                     @include width-height(15%,120px);
-                    margin: 15px;
+                    margin: 10px;
                     background-color: white;
                     border-radius: 5px;
                     cursor: pointer;

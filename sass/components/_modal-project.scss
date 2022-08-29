@@ -1,0 +1,27 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+.link-project {
+    @include width-height(100%, 100%);
+    @include display(flex, center, center);
+    position: absolute;
+    border: solid brown 2px;
+    background-color: rgba(0,0,0,0.44);
+    top: 0;
+    left: 100%;
+
+        .link-github {
+            text-align: center;
+            width: 30%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+        }
+}
+
+ul > li:hover > .link-project {
+    transition: 0.3s;
+    left: 0;
+}

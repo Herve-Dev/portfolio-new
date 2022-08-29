@@ -317,6 +317,9 @@ div ul li > a {
   display: flex;
   justify-content: center;
   border: solid 3px green;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 #projects ul li {
   width: 90%;
@@ -325,9 +328,9 @@ div ul li > a {
   border: solid 2px red;
 }
 #projects ul li > img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 #projects ul li > section {
   width: 100%;
@@ -337,6 +340,8 @@ div ul li > a {
 #projects ul li > section > ul {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
   border: solid 2px yellow;
 }
 #projects ul li > section > ul > li {
@@ -344,11 +349,42 @@ div ul li > a {
   justify-content: center;
   align-items: center;
   width: 20%;
-  height: 30%;
-  border-radius: 15px;
+  height: 20%;
+  border-radius: 5px;
   background-color: #1098F7;
-  width: 20%;
-  height: 30%;
+}
+#projects ul li > section > ul > .menu {
+  background-color: white;
+  border: none;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.link-project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: solid brown 2px;
+  background-color: rgba(0, 0, 0, 0.44);
+  top: 0;
+  left: 100%;
+}
+.link-project .link-github {
+  text-align: center;
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+ul > li:hover > .link-project {
+  transition: 0.3s;
+  left: 0;
 }
 
 header {

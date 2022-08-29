@@ -6,7 +6,6 @@
     @include display(flex, center,center);
     //flex-grow: 7;
     flex-direction: column;
-    border: solid 1px black;
 
         ul {
             width: 90%;
@@ -38,5 +37,9 @@
 
     #stack > ul {
         width: 100%;
+    }
+
+    #stack > ul > li > img {
+        width: 80px;
     }
 }

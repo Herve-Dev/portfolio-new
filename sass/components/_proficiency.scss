@@ -25,11 +25,11 @@
 
 @include breakpoint(mobile-tablet) {
     #proficiency > ul {
-        @include width-height(90%, 350px);
+        @include width-height(100%, 350px);
     }
 
     #proficiency > ul > li {
         height: 100%;
-        font-size: 23px;
+        font-size: 20px;
     }
 }

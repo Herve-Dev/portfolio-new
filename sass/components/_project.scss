@@ -35,7 +35,9 @@
 
                 li > section > ul > li {
                     @include display(flex, center, center);
-                    border: blue 2px solid;
+                    @include width-height(20%, 30%);
+                    border-radius: 15px;
+                    background-color: #1098F7;
                     width: 20%;
                     height: 30%;
                 }

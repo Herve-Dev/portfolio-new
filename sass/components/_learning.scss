@@ -9,11 +9,13 @@
         &__body {
             display: flex;
             justify-content: center;
+            align-items: center
         }
 
         &__items {
             @include display(flex, center, center);
             width: 180px;
+            height: 100px;
         }
 
         &__img {
@@ -23,7 +25,7 @@
 
 @include breakpoint(mobile-tablet) {
     .card-learning {
-        @include width-height(100%,80%);
+        @include width-height(100%,300px);
         flex-direction: row;
 
         &__body {

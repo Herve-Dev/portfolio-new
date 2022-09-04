@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <script defer src="./js/sidebar-menu.js"></script>
+    <script defer src="./js/slider-projects-responsive.js"></script>
     <script defer src="https://kit.fontawesome.com/79a5694c4a.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
@@ -25,10 +26,9 @@
         <section>
             <h1>Bienvenue sur mon portfolio</h1>
             <h2>Développeur web</h2>
-            <div></div>
         </section>
 
-        <div class="sidemenu-disable">
+        <div class="sidemenu-active sidemenu-disable">
             <i onclick="closeSideMenu()" class="fa-solid fa-xmark"></i>
             <ul>
                 <li onclick="closeSideMenu()"><a href="#about">À propos</a></li>
@@ -45,89 +45,110 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam aliquid laudantium, odio distinctio commodi eligendi repellendus magni rem voluptatum velit quasi animi labore ipsam quis deleniti sequi ea esse neque dolor. Perferendis officia saepe, necessitatibus ducimus, libero dignissimos nam, culpa ab provident veritatis dicta non fugit excepturi alias accusantium. Molestias pariatur minima error aspernatur soluta ea iusto a cum saepe cumque libero odit hic ipsa eligendi placeat eos harum voluptates quas, tempora reiciendis reprehenderit sit asperiores. Earum soluta eum accusantium eius quibusdam dignissimos hic optio. Quasi vel iste numquam assumenda praesentium voluptates officia, ut at temporibus. Quod ipsum aliquid ullam inventore voluptate. Debitis enim vel odit illum necessitatibus magni aspernatur eos quos, vero dignissimos sit iste iusto commodi ducimus dolores eius corrupti, cupiditate incidunt reiciendis voluptatem consequuntur vitae! Culpa et, excepturi eligendi earum reiciendis expedita in libero omnis voluptatem, nesciunt accusantium aliquid, corporis eius! Praesentium aliquam voluptate cumque quod ipsum debitis maxime. Incidunt provident fuga natus aut quo itaque, deserunt neque voluptates error optio ab voluptate! At dolorum, possimus enim dolores sapiente laborum officiis sint perspiciatis! Hic vero nostrum ex ea totam ipsa molestiae consequatur, quas expedita, alias aliquid. Rem modi dolores vitae ea porro quisquam. Cum, voluptate quasi officiis recusandae iusto atque repellendus accusantium corrupti accusamus cupiditate distinctio, eligendi exercitationem non, modi vel. Harum quia officia laudantium sed sapiente, est placeat temporibus impedit quo ipsum repellat iure, eaque facilis porro inventore natus voluptate doloribus exercitationem. Ut dolore nemo amet!</p>
         </section>
         <section id="skills">
-            <article id="stack">
+            <article class="card-stack">
                 <h3>Stack</h3>
-                <ul>
-                    <li>
-                        <img src="./images/logo_stack/file_type_html_icon_130541.svg" alt="" srcset="">
+                <ul class="card-stack__body">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/file_type_html_icon_130541.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/file_type_css_icon_130661.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/file_type_css_icon_130661.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/file_type_js_official_icon_130509.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/file_type_js_official_icon_130509.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/file_type_vue_icon_130078.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/file_type_vue_icon_130078.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/github_original_wordmark_logo_icon_146506.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/github_original_wordmark_logo_icon_146506.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/mongodb_original_wordmark_logo_icon_146425.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/mongodb_original_wordmark_logo_icon_146425.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/mysql_original_wordmark_logo_icon_146417.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/mysql_original_wordmark_logo_icon_146417.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/nodejs_original_wordmark_logo_icon_146412.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/nodejs_original_wordmark_logo_icon_146412.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/sass_original_logo_icon_146350.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/sass_original_logo_icon_146350.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/sequelize_original_logo_icon_146348.svg" alt="" srcset="">
+                    <li class="card-stack__items">
+                        <img class="card-stack__img" src="./images/logo_stack/sequelize_original_logo_icon_146348.svg" alt="" srcset="">
                     </li>
                 </ul>
             </article>
 
-            <article id="learning">
+            <article class="card-learning">
                 <h3>Apprentissage</h3>
-                <ul>
-                    <li>
-                        <img src="./images/logo_stack/nuxt-icon-svgrepo-com.svg" alt="" srcset="">
+                <ul class="card-learning__body">
+                    <li class="card-learning__items">
+                        <img class="card-learning__img" src="./images/logo_stack/nuxt-icon-svgrepo-com.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/icons8-typescript-240.svg" alt="" srcset="">
+                    <li class="card-learning__items">
+                        <img class="card-learning__img" src="./images/logo_stack/icons8-typescript-240.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/php-svgrepo-com.svg" alt="" srcset="">
+                    <li class="card-learning__items">
+                        <img class="card-learning__img" src="./images/logo_stack/php-svgrepo-com.svg" alt="" srcset="">
                     </li>
-                    <li>
-                        <img src="./images/logo_stack/symfony-svgrepo-com.svg" alt="" srcset="">
+                    <li class="card-learning__items">
+                        <img class="card-learning__img" src="./images/logo_stack/symfony-svgrepo-com.svg" alt="" srcset="">
                     </li>
                 </ul>
             </article>
 
-            <article id="proficiency">
+            <article class="card-proficiency">
                 <h3>Skills</h3>
-                <ul>
-                    <li>Curiosité</li>
-                    <li>Autonomie</li>
-                    <li>Créativité</li>
-                    <li>Persévérance</li>
-                    <li>Apprentissage</li>
+                <ul class="card-proficiency__body">
+                    <li class="card-proficiency__items">Curiosité</li>
+                    <li class="card-proficiency__items">Autonomie</li>
+                    <li class="card-proficiency__items">Créativité</li>
+                    <li class="card-proficiency__items">Persévérance</li>
+                    <li class="card-proficiency__items">Apprentissage</li>
                 </ul>
             </article>
         </section>
-        <section id="projects">
+        <section id="projects" class="card-project container">
             <h3>Projets</h3>
-            <ul>
-                <li>
-                    <img src="./Capture booki portfolio.PNG" alt="" srcset="">
-                    <div class="link-project">
-                        <a class="link-github" href="https://github.com/Herve-Dev/Booki.github.io" target="_blank">btn 1</a>
-                        <button>btn 2</button>
-                    </div>
-                    <section>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>2021</li>
+            <ul class="card-project__items-bloc slider">
+                <li class="card-project__items active">
+                    <img class="card-project__items-img" src="./images/capture-project/Capture booki portfolio.PNG" alt="" srcset="">
+                    <section class="card-project__bloc-link">
+                        <a class="card-project__bloc-link--link" href="https://github.com/Herve-Dev/Booki.github.io" target="_blank">Github</a>
+                        <a class="card-project__bloc-link--link" href="https://herve-dev.github.io/Booki.github.io/" target="_blank">Demo</a>
+                    </section>
+                    <section class="card-project__bloc-legend">
+                        <ul class="card-project__bloc-legend-body">
+                            <li class="card-project__bloc-legend-items">HTML</li>
+                            <li class="card-project__bloc-legend-items">CSS</li>
+                            <li class="card-project__bloc-legend-items">2021</li>
                         </ul>
                     </section>
                 </li>
+
+                <li class="card-project__items">
+                    <img class="card-project__items-img" src="./images/capture-project/Capture ohmyfood .png" alt="" srcset="">
+                    <section class="card-project__bloc-link">
+                        <a class="card-project__bloc-link--link" href="https://github.com/Herve-Dev/HerveTaillefond_3_26102021" target="_blank">Github</a>
+                        <a class="card-project__bloc-link--link" href="https://herve-dev.github.io/HerveTaillefond_3_26102021/" target="_blank">Demo</a>
+                    </section>
+                    <section class="card-project__bloc-legend">
+                        <ul class="card-project__bloc-legend-body">
+                            <li class="card-project__bloc-legend-items">HTML</li>
+                            <li class="card-project__bloc-legend-items">CSS</li>
+                            <li class="card-project__bloc-legend-items">SASS</li>
+                            <li class="card-project__bloc-legend-items">2021</li>
+                        </ul>
+                    </section>
+                </li> 
             </ul>
+
+            <div class="bloc-btn-slider">
+                <button class="bloc-btn-slider__btn previous" ><i class="logo-btn fa-solid fa-arrow-left"></i></button>
+                <button class="bloc-btn-slider__btn next"><i class="logo-btn fa-solid fa-arrow-right"></i></button>
+            </div>
         </section>
     </main>
     <footer id="contact">

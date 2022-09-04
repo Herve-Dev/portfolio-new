@@ -1,0 +1,39 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+.bloc-btn-slider {
+    display: none;
+}
+
+@include breakpoint(mobile-tablet) {
+    .card-project__items {
+        display: none;
+    } 
+    
+    .active {
+        display: flex;
+    }
+    
+    .bloc-btn-slider {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: solid 1px blue;
+
+            &__btn {
+                cursor: pointer;
+                border: none;
+                border-radius: 100%;
+                margin: 5px;
+                width: 70px;
+                height: 70px;
+            }
+    }
+
+    .logo-btn {
+        font-size: 30px;
+    }
+}
+
+
+

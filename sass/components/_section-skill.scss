@@ -5,53 +5,35 @@
     @include width-height(100%, 100vh);
     display: flex;
     flex-wrap: wrap;
+    border: solid 2px blue;
     
         article {
             @include margin-padding(0,0);
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-    
+
         ul {
-            @include margin-padding(0,0);
-            @include display(flex, center, center);
-            list-style: none;
-            border-radius: 10px;
-            height: 80%;
-            background-color: #1098F7;
-        }
-
-        ul > li {
-            @include display(flex, center, center);
-        }
-
-        ul > li > img {
-            width: 80px;
+            @include width-height(70%,70%);
+            border: solid 2px green;
+            position: relative;
+            overflow: hidden;
+            flex-wrap: wrap;
         }
 }
 
 @include breakpoint(mobile-tablet) {
     #skills {
-        align-items: center;
         flex-direction: column;
-        border: solid 2px purple;
+        flex-wrap: nowrap;
+        border: solid 2px red;
+        justify-content: center;
+        align-items: center;
 
-        article {
-            @include width-height(90%,30%);
-            margin: 5px;
-        }
-
-        ul {
-            max-height: 150px;
-            width: 90%;
-            overflow-x: auto;
-        }
-
-        ul > li {
-            width: 50%;
-        }
-
-        ul > li > img {
-            width: 100px;
-        }
+            ul {
+                @include width-height(90%,100%);
+            }        
     }
 }

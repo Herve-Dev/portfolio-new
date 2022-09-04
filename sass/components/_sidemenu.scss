@@ -1,7 +1,8 @@
 @use "../utils/mixins" as *;
 
-div {
+.sidemenu-active {
     @include width-height(100%,100vh);
+    flex-direction: column;
     background-color: #2F2F2F;
     position: absolute;
     position: fixed;

@@ -1,61 +1,43 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
-#learning {
-    flex-grow: 3;
-    width: 20%;
+.card-learning {
+    flex-grow: 1;
+    width: 50%;
     height: 50%;
 
-        h3 {
-            text-align: center;
-            flex-wrap: nowrap;
-            margin-top: 25px;
+        &__body {
+            display: flex;
+            justify-content: center;
         }
 
-        ul {
-            display: flex;
-            width: 90%;
-            flex-wrap: wrap;
+        &__items {
+            @include display(flex, center, center);
+            width: 180px;
+        }
 
-                li {
-                    padding: 5px;
-                    width: 30%;
-                    margin: 10px;
-                    background-color: white;
-                    border-radius: 5px;
-                    height: 80px;
-                }
-
-                li:hover {
-                    cursor: pointer;
-                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25); 
-                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
-                    transition: 0.5s;
-                    transform: scale(1.1);
-                }
-
-                li > img {
-                    width: 60px;
-                }
+        &__img {
+            width: 50%;
         }
 }
 
 @include breakpoint(mobile-tablet) {
-    #learning {
-        align-items: center;
-    }
-
-    #learning > ul {
-        flex-wrap: nowrap;
+    .card-learning {
+        @include width-height(100%,80%);
         flex-direction: row;
-        width: 100%;
-    }
 
-    #learning > ul > li {
-        width: 25%;
-    }
+        &__body {
+            flex-wrap: nowrap;
+        }
 
-    #learning > ul > li > img {
-        width: 60px;
+        &__items {
+            width: 20%;
+            margin: 5px;
+            border: solid 1px black;
+        }
+
+        &__img {
+            width: 80px;
+        }
     }
 }

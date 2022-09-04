@@ -1,53 +1,100 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
-#projects {
+.card-project {
+    position: relative;
     border: solid 2px black;
+    
 
-        ul {
-            @include width-height(40%, 50%);
-            display: flex;
-            justify-content: center;
-            border: solid 3px green;
-            position: relative;
+        &__items {
             overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: solid 2px black;
+            width: 25%;
+            height: 250px;
+            margin: 10px;
             cursor: pointer;
+        }
 
-                li {
-                    @include width-height(90%, 50%);
-                    margin: 10px;
-                    border: solid 2px red;
-                }
+        &__items:hover &__bloc-link {
+            transition: 0.4s;
+            left: 0;
+        }
 
-                li > img {
-                    @include width-height(100%, 100%);
-                    object-fit: cover;
-                }
+        &__items-bloc {
+            display: flex;
+            border: solid 2px purple;
+        }
 
-                li > section {
-                    @include width-height(100%, 80%);
-                    border: blue 2px solid;
-                }
+        &__bloc-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            //display: none;
+            border: solid 2px red;
+            background-color: rgba(0, 0, 0, 0.6);
+            left: 100%;
 
-                li > section > ul {
-                    @include width-height(100%, 100%);
-                    display: flex;
-                    justify-content: flex-start;
-                    border: solid 2px yellow;
-                }
-
-                li > section > ul > li {
-                    @include display(flex, center, center);
-                    @include width-height(20%, 20%);
+                &--link {
                     border-radius: 5px;
-                    background-color: #1098F7;
-                }
-
-                li > section > ul > .menu {
-                    background-color: white;
-                    border: none;
-                    justify-content: flex-end;
-                    cursor: pointer;
+                    height: 30px;
+                    text-align: center;
+                    width: 50px;
+                    background-color: blue;
+                    margin: 15px;
+                    color: white;
                 }
         }
+
+        &__items-img {
+            border: red solid 1px;
+            width: 100%;
+            height: 160px;
+        }
+
+        &__bloc-legend {
+            border: solid 2px green;
+            height: 100%;
+        }
+
+        &__bloc-legend-body {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__bloc-legend-items {
+            display: flex;
+            border-radius: 5px;
+            margin: 10px;
+            border: solid 1px black;
+            width: 60px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }   
+}
+
+@include breakpoint(mobile-tablet) {
+    .card-project {
+
+        &__items-bloc {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__items {
+            width: 90%;
+        }
+       
+    }
 }

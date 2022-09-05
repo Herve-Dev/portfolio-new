@@ -1,0 +1,20 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+@include breakpoint(mobile-tablet) {
+    .foot {
+        border: solid 2px blue;
+        height: 20vh;
+
+            &__bloc-social {
+                display: flex;
+                border: solid 3px black;
+
+                    
+            }
+
+            &__social-img {
+                width: 80px;
+            } 
+    }
+}

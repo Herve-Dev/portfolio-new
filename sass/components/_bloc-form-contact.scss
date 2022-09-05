@@ -1,0 +1,46 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
+@include breakpoint(mobile-tablet) {
+    .bloc-form-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: solid 2px green;
+        height: 80vh;
+
+            &__text {
+                text-align: center;
+                margin: 10px;
+            }
+
+            &__form-contact {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                border: solid 2px black;
+                margin: 10px;
+                //background-color: blue;
+            }
+
+            &__input {
+                //border-radius: 10px;
+                resize: none;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid black;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            &__btn-send-contact {
+                margin: 10px;
+                padding: 10px;
+            }
+    }
+
+    .fa-paper-plane {
+        margin: 5px;
+    }
+}

@@ -23,7 +23,7 @@
 @include breakpoint(mobile-tablet) {
     .card-proficiency {
         width: 100%;
-        height: 100%;
+        height: 200px;
 
             &__body {
                 flex-direction: column;

@@ -8,13 +8,16 @@
 
             &__bloc-social {
                 display: flex;
-                border: solid 3px black;
-
-                    
+                justify-content: center;
+                border: solid 3px black;        
             }
 
             &__social-img {
-                width: 80px;
+                width: 40px;
             } 
+
+            &__copyright {
+                text-align: center;
+            }
     }
 }

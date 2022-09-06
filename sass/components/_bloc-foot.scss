@@ -1,23 +1,38 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
+.foot {
+    border: solid 2px blue;
+    height: 20vh;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        &__bloc-social {
+            display: flex;
+            justify-content: center;
+            border: solid 3px black;        
+        }
+
+        &__social-img {
+            width: 50px;
+        } 
+
+        &__copyright {
+            margin: 0;
+            font-size: 20px;
+            text-align: center;
+            border: solid 2px green;
+        }
+}
+
 @include breakpoint(mobile-tablet) {
-    .foot {
-        border: solid 2px blue;
-        height: 20vh;
+    .foot__social-img {
+        width: 40px;
+    }
 
-            &__bloc-social {
-                display: flex;
-                justify-content: center;
-                border: solid 3px black;        
-            }
-
-            &__social-img {
-                width: 40px;
-            } 
-
-            &__copyright {
-                text-align: center;
-            }
+    .foot__copyright {
+        font-size: large;
     }
 }

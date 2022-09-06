@@ -1,21 +1,28 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
+@use "../utils/keyframes" as *;
 
 .card-learning {
     flex-grow: 1;
-    width: 50%;
+    width: 40%;
     height: 50%;
+    align-items: flex-end;
 
         &__body {
             display: flex;
             justify-content: center;
-            align-items: center
+            align-items: center;
+            margin-right: 10px;
+            width: 65%;
+            height: 70%;
+            //animation: clip-path-learning 1.5s both;
         }
 
         &__items {
             @include display(flex, center, center);
             width: 180px;
             height: 100px;
+            margin: 5px;
         }
 
         &__img {
@@ -30,6 +37,7 @@
 
         &__body {
             flex-wrap: nowrap;
+            clip-path: none;
         }
 
         &__items {

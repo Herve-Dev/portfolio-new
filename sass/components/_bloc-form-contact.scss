@@ -1,9 +1,8 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 
-@include breakpoint(mobile-tablet) {
-    .bloc-form-contact {
-        display: flex;
+.bloc-form-contact {
+    display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -11,6 +10,7 @@
         height: 80vh;
 
             &__text {
+                font-size: 30px;
                 text-align: center;
                 margin: 10px;
             }
@@ -18,7 +18,7 @@
             &__form-contact {
                 display: flex;
                 flex-direction: column;
-                width: 80%;
+                width: 30%;
                 border: solid 2px black;
                 margin: 10px;
                 //background-color: blue;
@@ -38,9 +38,18 @@
                 margin: 10px;
                 padding: 10px;
             }
+}
+
+.fa-paper-plane {
+    margin: 5px;
+}
+
+@include breakpoint(mobile-tablet) {
+    .bloc-form-contact__form-contact {
+        width: 80%;
     }
 
-    .fa-paper-plane {
-        margin: 5px;
+    .bloc-form-contact__text {
+        font-size: large;
     }
 }

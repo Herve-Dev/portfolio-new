@@ -10,17 +10,24 @@
         article {
             @include margin-padding(0,0);
             display: flex;
-            justify-content: center;
-            align-items: center;
+            //justify-content: center;
+            //align-items: center;
             flex-direction: column;
+            //border: solid 2px blue;
         }
 
         ul {
-            @include width-height(70%,70%);
-            border: solid 2px green;
+           // @include width-height(70%,70%);
             position: relative;
             overflow: hidden;
             flex-wrap: wrap;
+            //-webkit-box-shadow: 1px 4px 11px 0px rgba(0,0,0,0.58); 
+            //box-shadow: 1px 4px 11px 0px rgba(0,0,0,0.58);
+            background-color: white;
+
+                li {
+                    background-color: white;
+                }
         }
 }
 

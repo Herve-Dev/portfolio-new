@@ -5,13 +5,24 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    scrollbar-width: none;
 }
 
-a, h1, h2 {
+a, h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    text-align: center
 }
 
 ul {
     @include margin-padding(0,0);
     list-style: none;
+    border-radius: 5px;
+}
+
+li, form {
+    //border: solid 1px black;
+    border-radius: 5px;
 }

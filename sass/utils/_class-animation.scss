@@ -1,0 +1,13 @@
+@use "../utils/keyframes" as *;
+
+.anim-about {
+    animation: clip-path-about 0.5s both;
+}
+
+.anim-card-learning {
+    animation: clip-path-learning 1.5s both;
+}
+
+.anim-proficiency {
+    animation: clip-path-proficiency 1.5s both;
+}

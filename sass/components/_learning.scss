@@ -34,6 +34,7 @@
     .card-learning {
         @include width-height(100%,300px);
         flex-direction: row;
+        align-items: center;
 
         &__body {
             flex-wrap: nowrap;

@@ -4,5 +4,6 @@
 footer {
     @include width-height(100%, 100vh);
     scroll-snap-align: center;
+    background-color: #E8EBED;
 }
 

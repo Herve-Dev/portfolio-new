@@ -1,4 +1,6 @@
 @use "../utils/keyframes" as *;
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
 
 .anim-about {
     animation: clip-path-about 0.5s both;
@@ -10,4 +12,16 @@
 
 .anim-proficiency {
     animation: clip-path-proficiency 1.5s both;
+}
+
+@include breakpoint(mobile-tablet) {
+    .anim-about {
+        animation: none;
+    }
+    .anim-card-learning {
+        animation: none;
+    }
+    .anim-proficiency {
+        animation: none;
+    }
 }

@@ -2,28 +2,36 @@
 @use "../utils/breakpoint" as *;
 
 .foot {
-    border: solid 2px blue;
+   // border: solid 2px blue;
     height: 20vh;
+    background-color: #2F2F2F;
+
 
         h3 {
             margin-top: 0;
+            color: #E8EBED;
         }
 
         &__bloc-social {
             display: flex;
             justify-content: center;
-            border: solid 3px black;        
+            //border: solid 3px black;        
         }
 
         &__social-img {
             width: 50px;
+            color: #E8EBED;
+            filter: invert(100%);
         } 
 
         &__copyright {
+            padding-top: 10px;
             margin: 0;
             font-size: 20px;
             text-align: center;
-            border: solid 2px green;
+            //border: solid 2px green;
+            color: #E8EBED;
+            opacity: 0.4;
         }
 }
 

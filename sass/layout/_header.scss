@@ -3,7 +3,9 @@
 
 header {
     flex-direction: column;
-    @include width-height(100%,100vh);
+    //width: 100%;
+    //min-height: 100vh;
+    //@include width-height(100%,100vh);
     scroll-snap-align: center;
 
         section {

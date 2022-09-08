@@ -2,8 +2,7 @@ window.onload = () => {
 
     const animationAbout = document.getElementById('about');
     const animationLearning = document.querySelector('.card-learning__body');
-    const animationProficiency = document.querySelector('.card-proficiency__body')
-    console.log(animationProficiency);
+    const animationProficiency = document.querySelector('.card-proficiency__body');
 
     const Observe = (target, onIntersection) => {
         const test = new IntersectionObserver((entries, observer) => {

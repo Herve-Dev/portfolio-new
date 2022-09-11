@@ -201,7 +201,6 @@ nav .fa-bars {
   #skills {
     flex-direction: column;
     flex-wrap: nowrap;
-    border: solid 2px red;
     justify-content: center;
     align-items: center;
   }
@@ -247,8 +246,7 @@ nav .fa-bars {
   }
   .card-stack__items {
     width: 15%;
-    margin: 5px;
-    border: solid 2px black;
+    margin: 6px;
     height: 100px;
   }
   .card-stack__img {
@@ -295,7 +293,6 @@ nav .fa-bars {
   .card-learning__items {
     width: 20%;
     margin: 5px;
-    border: solid 1px black;
   }
   .card-learning__img {
     width: 80px;
@@ -333,10 +330,13 @@ nav .fa-bars {
     flex-direction: column;
     flex-wrap: wrap;
     clip-path: none;
+    margin: 10px;
+    padding: 10px;
   }
   .card-proficiency__items {
     width: 100%;
     height: 15%;
+    margin: 0;
     font-size: 20px;
   }
 }
@@ -373,13 +373,15 @@ nav .fa-bars {
   left: 100%;
 }
 .card-project__bloc-link--link {
+  text-decoration: none;
   border-radius: 5px;
   height: 30px;
   text-align: center;
-  width: 50px;
+  width: 60px;
   background-color: blue;
   margin: 15px;
   color: white;
+  font-size: 20px;
 }
 .card-project__items-img {
   background-color: white;
@@ -388,8 +390,8 @@ nav .fa-bars {
   height: 360px;
 }
 .card-project__bloc-legend {
-  border: solid 2px green;
   height: 100px;
+  background-color: #2F2F2F;
 }
 .card-project__bloc-legend-body {
   display: flex;
@@ -405,8 +407,10 @@ nav .fa-bars {
   height: 30px;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #2F2F2F;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 290px) and (max-width: 802px) {
@@ -434,7 +438,6 @@ nav .fa-bars {
     display: flex;
     justify-content: center;
     width: 100%;
-    border: solid 1px blue;
   }
   .bloc-btn-slider__btn {
     cursor: pointer;
@@ -443,6 +446,8 @@ nav .fa-bars {
     margin: 5px;
     width: 70px;
     height: 70px;
+    background-color: #2F2F2F;
+    color: white;
   }
   .logo-btn {
     font-size: 30px;
@@ -516,8 +521,8 @@ nav .fa-bars {
   background-color: #2F2F2F;
 }
 .foot h3 {
-  margin-top: 0;
   color: #E8EBED;
+  padding-top: 5px;
 }
 .foot__bloc-social {
   display: flex;

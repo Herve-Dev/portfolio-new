@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./js/data-project.js"></script>
     <script defer src="./js/sidebar-menu.js"></script>
     <script defer src="./js/slider-projects-responsive.js"></script>
     <script defer src="./js/observer.js"></script>
@@ -160,7 +161,7 @@
             <p class="bloc-form-contact__text">Vous pouvez me contacter via ce formulaire ou sur mon linkedIn</p>
             <form method="post" class="bloc-form-contact__form-contact">
                 <input class="bloc-form-contact__input input-email" type="email" placeholder="Votre Email">
-                <textarea class="bloc-form-contact__input input-message" name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <textarea class="bloc-form-contact__input input-message" maxlength="250" name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
                 <button onclick="sendMsg(event)" class="bloc-form-contact__btn-send-contact"><i class="fa-solid fa-paper-plane"></i>Envoyer</button>
             </form>
         </section>

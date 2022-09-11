@@ -2,14 +2,12 @@
 @use "../utils/breakpoint" as *;
 
 .foot {
-   // border: solid 2px blue;
     height: 20vh;
     background-color: #2F2F2F;
 
-
         h3 {
-            margin-top: 0;
             color: #E8EBED;
+            padding-top: 5px;
         }
 
         &__bloc-social {

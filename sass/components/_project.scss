@@ -3,14 +3,12 @@
 
 .card-project {
     position: relative;
-    //border: solid 2px black;
     
         &__items {
             overflow: hidden;
             position: relative;
             display: flex;
             flex-direction: column;
-            //border: solid 2px black;
             width: 25%;
             height: 400px;
             margin: 10px;
@@ -26,7 +24,6 @@
 
         &__items-bloc {
             display: flex;
-            //border: solid 2px purple;
         }
 
         &__bloc-link {
@@ -60,7 +57,6 @@
         }
 
         &__bloc-legend {
-            //border: solid 2px green;
             height: 100px;
             background-color: #2F2F2F;
         }

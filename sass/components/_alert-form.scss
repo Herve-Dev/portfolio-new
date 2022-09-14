@@ -1,0 +1,17 @@
+#popup-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border: solid 2px green;
+    width: 400px;
+    height: 100px;
+    bottom: 150px;
+    background-color: green;
+    opacity: 0;
+}
+
+.res-server {
+    border: solid 1px black;
+}
+

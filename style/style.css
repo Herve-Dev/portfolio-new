@@ -163,6 +163,18 @@ nav .fa-bars {
     clip-path: polygon(100% 0, 100% 44%, 100% 100%, 7% 100%, 0% 50%, 7% 0);
   }
 }
+@keyframes show-pop-alert {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hide-pop-alert {}
 #about {
   width: 100%;
   height: 100vh;
@@ -550,6 +562,23 @@ nav .fa-bars {
     font-size: large;
   }
 }
+#popup-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border: solid 2px green;
+  width: 400px;
+  height: 100px;
+  bottom: 150px;
+  background-color: green;
+  opacity: 0;
+}
+
+.res-server {
+  border: solid 1px black;
+}
+
 header {
   flex-direction: column;
   scroll-snap-align: center;
@@ -607,6 +636,10 @@ footer {
 
 .anim-proficiency {
   animation: clip-path-proficiency 1.5s both;
+}
+
+.anim-show-popup {
+  animation: show-pop-alert 3s ease-in-out;
 }
 
 @media screen and (min-width: 290px) and (max-width: 802px) {

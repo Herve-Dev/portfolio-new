@@ -17,7 +17,8 @@ function sendMsg(event) {
     .then((result) => {
         console.log(result);
         return formReset
-    }).catch((err) => {
-        console.log(err);
+    }).catch((error) => {
+        showResponseServer(error.response.data.error)
+        console.log(error.response.data.error);
     });
 }

@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/api/sendMessage";
+const apiUrl = "https://portfolio-fullmetal-dev.herokuapp.com/api/sendMessage";
 
 function sendMsg(event) {
     event.preventDefault();
@@ -15,10 +15,16 @@ function sendMsg(event) {
         message:msgContact,
     })
     .then((result) => {
-        console.log(result);
-        return formReset
+        if (result) {
+            console.log(result);
+            showResponseServer(result.data.message)
+            return formReset
+        } 
     }).catch((error) => {
-        showResponseServer(error.response.data.error)
-        console.log(error.response.data.error);
+        if (error) {
+            showResponseServer(error.response.data.error)
+            console.log(error.response.data.error);
+            return formReset
+        } 
     });
 }

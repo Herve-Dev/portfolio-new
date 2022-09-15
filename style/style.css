@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400&display=swap");
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
+}
+
+p {
+  font-family: "Merriweather", serif;
 }
 
 a, h1, h2, h3 {
@@ -174,12 +179,13 @@ nav .fa-bars {
     opacity: 1;
   }
 }
-@keyframes hide-pop-alert {}
 #about {
   width: 100%;
   height: 100vh;
   border: solid 2px red;
   background-color: red;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 
 @media screen and (min-width: 290px) and (max-width: 802px) {
@@ -567,18 +573,31 @@ nav .fa-bars {
   align-items: center;
   justify-content: center;
   position: fixed;
-  border: solid 2px green;
   width: 400px;
-  height: 100px;
+  height: 70px;
   bottom: 150px;
-  background-color: green;
+  background-color: #2F2F2F;
   opacity: 0;
+  left: 10px;
+  border-radius: 5px;
 }
 
 .res-server {
-  border: solid 1px black;
+  font-size: 25px;
+  color: white;
 }
 
+@media screen and (min-width: 290px) and (max-width: 802px) {
+  #popup-alert {
+    width: 50%;
+    bottom: 130px;
+    height: 40px;
+  }
+  .res-server {
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+}
 header {
   flex-direction: column;
   scroll-snap-align: center;

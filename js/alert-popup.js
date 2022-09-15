@@ -8,6 +8,7 @@ function showResponseServer(res) {
       if (document.querySelector('.anim-show-popup')) {
             setTimeout(() => {
                   popupAlert.classList.remove('anim-show-popup')
+                  textalert.removeChild(responseServer)
             }, 5000)
       }
 };

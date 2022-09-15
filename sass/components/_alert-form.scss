@@ -1,17 +1,35 @@
+@use "../utils/mixins" as *;
+@use "../utils/breakpoint" as *;
+
 #popup-alert {
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    border: solid 2px green;
     width: 400px;
-    height: 100px;
+    height: 70px;
     bottom: 150px;
-    background-color: green;
+    background-color: #2F2F2F;
     opacity: 0;
+    left: 10px;
+    border-radius: 5px;
 }
 
 .res-server {
-    border: solid 1px black;
+    font-size: 25px;
+    color: white;
+}
+
+@include breakpoint(mobile-tablet) {
+    #popup-alert {
+        width: 50%;
+        bottom: 130px;
+        height: 40px;
+    }
+
+    .res-server {
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
 }
 

@@ -8,6 +8,8 @@
     background-color: red;
     //clip-path: polygon(0 0, 100% 0, 100% 65%, 0 85%);
     //animation: clip-path-about 2s both;
+    flex-wrap: wrap;
+    overflow: scroll;
 }
 
 @include breakpoint(mobile-tablet) {

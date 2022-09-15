@@ -1,11 +1,16 @@
 @use "../utils/mixins" as *;
 @use "../utils/breakpoint" as *;
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
+}
+
+p {
+    font-family: 'Merriweather', serif; 
 }
 
 a, h1, h2, h3 {
@@ -23,6 +28,5 @@ ul {
 }
 
 li, form {
-    //border: solid 1px black;
     border-radius: 5px;
 }

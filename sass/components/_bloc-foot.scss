@@ -3,12 +3,11 @@
 
 .foot {
     height: 20vh;
-    padding: 20px;
     background-color: #2F2F2F;
 
         h3 {
-            color: #E8EBED;
-            padding-top: 5px;
+            color: #D99830;
+            padding-top: 15px;
         }
 
         &__bloc-social {
@@ -23,6 +22,7 @@
         } 
 
         &__copyright {
+            padding-top: 10px;
             margin: 0;
             font-size: 20px;
             text-align: center;
@@ -37,6 +37,6 @@
     }
 
     .foot__copyright {
-        font-size: large;
+        font-size: 15px;
     }
 }

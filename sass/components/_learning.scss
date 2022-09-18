@@ -8,6 +8,10 @@
     height: 50%;
     align-items: flex-end;
 
+        h3 {
+            width: 65%;
+        }
+
         &__body {
             display: flex;
             justify-content: center;

@@ -10,29 +10,43 @@ header {
             display: flex;
             flex-direction: column;
             overflow-wrap: break-word;
+            align-items: center;
+            
 
                 h1 {
+                    @include glassmorph-style;
+                    flex-wrap: nowrap;
+                    width: 90%;
+                    padding: 20px;
+                    margin-top: 180px;
                     text-align: center;
                     font-size: 100px;
                     font-weight: 900;
+                    color: #D99830;
                 }
 
                 h2 {
+                    @include glassmorph-style;
+                    width: 90%;
+                    padding: 20px;
                     text-align: center;
                     font-size: 60px;
                     margin-bottom: 0;
+                    color: #D99830;
                 }
         }
 }
 
 @include breakpoint(mobile-tablet) {
     header > section > h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 150px;
         font-weight: 900;
+        width: 80%;
     }
 
     header > section > h2 {
         font-size: 30px;
+        width: 80%;
     }
 }

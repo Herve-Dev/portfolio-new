@@ -13,3 +13,12 @@
     width: $width;
     height: $height;
 }
+
+@mixin glassmorph-style {
+    background: rgba(47, 47, 47, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(47, 47, 47, 0.53);
+} 

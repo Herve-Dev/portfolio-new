@@ -466,6 +466,10 @@ nav .fa-bars {
   height: 50%;
   width: 100%;
   align-items: center;
+  background-color: #2F2F2F;
+}
+.card-stack h3 {
+  color: #D99830;
 }
 .card-stack__body {
   width: 70%;
@@ -505,9 +509,11 @@ nav .fa-bars {
   width: 40%;
   height: 50%;
   align-items: flex-end;
+  background-color: #2F2F2F;
 }
 .card-learning h3 {
   width: 65%;
+  color: #D99830;
 }
 .card-learning__body {
   display: flex;
@@ -552,9 +558,11 @@ nav .fa-bars {
   width: 50%;
   height: 50%;
   flex-grow: 1;
+  background-color: #2F2F2F;
 }
 .card-proficiency h3 {
   width: 73%;
+  color: #D99830;
 }
 .card-proficiency__body {
   display: flex;
@@ -789,7 +797,7 @@ nav .fa-bars {
 .foot__copyright {
   padding-top: 10px;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: #E8EBED;
   opacity: 0.4;

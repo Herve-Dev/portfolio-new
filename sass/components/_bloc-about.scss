@@ -20,3 +20,9 @@
             margin: 0 10px 10px 10px;
         }
 }
+
+@include breakpoint(mobile-tablet) {
+    .bloc-about__text {
+        font-size: 16px;
+    }
+}

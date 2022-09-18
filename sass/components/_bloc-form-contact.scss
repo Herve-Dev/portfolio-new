@@ -2,20 +2,17 @@
 @use "../utils/breakpoint" as *;
 
 .bloc-form-contact {
-    display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-       // border: solid 2px green;
         height: 80vh;
 
             &__text {
                 font-size: 30px;
                 text-align: center;
-                //margin-top: 5px;
                 margin: 5px;
                 padding: 0px;
-                //border: solid 1px black;
                 height: 80px;
                 font-family: 'Oswald', sans-serif;
             }
@@ -25,7 +22,6 @@
                 flex-direction: column;
                 width: 30%;
                 height: 70%;
-                //border: solid 2px black;
                 margin: 10px;
                 background-color: white;
                 -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.41); 
@@ -68,6 +64,7 @@
 @include breakpoint(mobile-tablet) {
     .bloc-form-contact__form-contact {
         width: 80%;
+        height: 50%;
     }
 
     .bloc-form-contact__text {

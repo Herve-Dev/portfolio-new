@@ -4,15 +4,12 @@
 
 #about {
     @include width-height(100%, 100vh);
-    //border: solid 2px red;
-    //background-color: #58390E;
     flex-wrap: wrap;
     overflow: scroll;
 
         h3 {
             color: #2F2F2F;
         }
-
 }
 
 @include breakpoint(mobile-tablet) {

@@ -530,6 +530,7 @@ nav .fa-bars {
 @media screen and (min-width: 290px) and (max-width: 802px) {
   .bloc-form-contact__form-contact {
     width: 80%;
+    height: 50%;
   }
   .bloc-form-contact__text {
     font-size: large;
@@ -554,7 +555,6 @@ nav .fa-bars {
   filter: invert(100%);
 }
 .foot__copyright {
-  padding-top: 10px;
   margin: 0;
   font-size: 20px;
   text-align: center;
